@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --main-color: #ff5f58;
+    --body-color: #E0E0E0;
+    --box-color: white;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--body-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box__container{
+    width: 500px;
+    height: 100vh;
+    background-color: var(--box-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* nav bar */
+
+nav{
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    color: var(--box-color);
+}
+
+nav h3{
+    margin-left: 10px;
+    
+}
+
+/* travel chart section */
+
+.charts__section{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0 30px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.img__container img{
+    height: 130px;
+    width: 90px;
+    border-radius: 5px;
+}
+
+.txt__container{
+    margin-left: 20px;
+}
+
+.txt__container> .country{
+    display: inline;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.txt__container> .map__url{
+    display: inline;
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+.txt__container i{
+    color: var(--main-color);
+}
+
+.txt__container>.description{
+    font-size: 12px;
+    margin-top: 5px;
+}
