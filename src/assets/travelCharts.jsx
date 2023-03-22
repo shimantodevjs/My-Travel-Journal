@@ -6,7 +6,7 @@ function TravelCharts(props){
          </div>
          <div className="txt__container">
              <p className="country"><i class="fa-solid fa-location-dot"></i> {props.country}</p>
-             <a href={props.mapUrl} className="map__url">view on google maps</a>
+             <a href={props.mapUrl} target="_blank" className="map__url">view on google maps</a>
              <h3 className="location">{props.location}</h3>
              <h6 className="date">{`${props.startDate} - ${props.endDate}`}</h6>
              <p className="description">{props.description}</p>
